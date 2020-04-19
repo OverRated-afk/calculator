@@ -1,0 +1,120 @@
+
+#calcContainer{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-self: center;
+    border: solid;
+    border-color:white;
+    background-color: grey;
+    background-color: grey;
+    border: solid;
+    border-color: black;
+    border-radius: 2%;
+    min-height: 250px;
+    max-height: 750px;
+    height: auto;
+    min-width: 250px;
+    max-width: 1500px;
+    width: auto;
+    grid-template-areas:
+    "display display display display" 
+    "clear multiply minus divide"
+    "seven eight nine add"
+    "four five six sum"
+    "one two three sum"
+    "decimal zero zero sum";
+}
+
+button{
+    font-size: 16px;
+}
+
+.operator{
+    flex: 1 1 0;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+.numbers{
+    flex: 1 1 0;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    }
+#display{
+    grid-area: display;
+    height: 25px;
+    width: auto;
+    justify-content: right;
+    align-self: auto;
+    row-gap: 0px;
+}
+
+#one {
+    grid-area: one;
+}
+#two {
+    grid-area: two;
+}
+#three {
+    grid-area: three;
+}
+#four{
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+#seven {
+    grid-area: seven;
+}
+#eight{
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#zero {
+    grid-area: zero;
+    width: auto;
+}
+
+#subtract{
+    grid-area: minus;
+}
+
+#divide{
+    grid-area: divide;
+}
+
+#multiply{
+    grid-area: multiply;
+}
+
+#add {
+    grid-area: add;
+}
+#clear {
+    grid-area: clear;
+}
+#sum {
+    grid-area: sum;
+    height: auto;
+}
+#decimal {
+    grid-area: decimal;
+}
